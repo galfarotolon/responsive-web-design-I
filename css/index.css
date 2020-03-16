@@ -76,7 +76,7 @@ body{
 
 
 /* nav */
-nav {
+nav{
 display: flex;
 justify-content: space-evenly;
 align-content: center;
@@ -86,6 +86,14 @@ align-content: center;
 		background-color: #BFBFBF;
 		position: fixed;
 		z-index: 1;
+}
+
+.links{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
 }
 
 nav a{
@@ -286,10 +294,6 @@ align-content: center;
 
 }
 
-.ideas-header-img{
-
-}
-
 .leftAbout{
 	width: 30%;
 }
@@ -336,3 +340,54 @@ align-content: center;
 
 
 
+/* MEDIA QUERY */
+
+@media (max-width: 800px){
+
+    nav{
+        flex-direction: column-reverse;
+        background-color: white;
+        position: static;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    nav a{
+    
+        color: grey;
+    
+        
+    }
+
+    nav a:hover{
+        border-bottom: none;
+    
+    }
+
+    .links{
+        padding-top: 4%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo{
+        width: 30%;
+        margin-top: 5%;
+       
+    }
+
+    .imgHeader{
+        display: none;
+    }
+
+    .header{
+ top: 50%;
+       
+    }
+    }
+
+
+}
