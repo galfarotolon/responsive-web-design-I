@@ -1,3 +1,338 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+		max-width: 100%;
+}
+
+html, body, button {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	padding: 0 5% 5% 5%;
+
+}
+
+
+
+/* nav */
+nav {
+display: flex;
+justify-content: space-evenly;
+align-content: center;
+		width: 90%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		background-color: #BFBFBF;
+		position: fixed;
+		z-index: 1;
+}
+
+nav a{
+display: flex;
+	text-decoration: none;
+	color: white;
+	align-items: center;
+}
+
+nav a:hover{
+	border-bottom: white solid 2px;
+
+}
+
+nav .logo{
+display: flex;
+align-content: center;
+}
+
+/* Header */
+
+.header{
+	padding-top: 15%;
+	padding-bottom: 5%;
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+
+.leftHeader h1{
+	font-size: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.leftHeader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.leftHeader button {
+	padding: 2% 13%;
+	background-color: white;
+	border: 1px solid black;
+	font-size: 1rem;
+	}
+
+	.leftHeader button:hover{
+		color: white;
+		background-color: black;
+		transition: 0.5s;
+	}
+
+
+/* Features and About */
+
+#topSection{
+	display: flex;
+	margin: 5% 0;
+
+
+}
+
+
+/* middle image */
+
+.middle-img{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* services, product, vision */
+
+#bottomSection{
+	display: flex;
+	justify-content: space-between;
+	margin: 5% 0;
+}
+
+.bottomSec{
+	display: inline-block;
+	width: 30%;
+
+}
+
+
+/* Contact */
+
+#contact{
+	padding-top: 5%;
+	border-top: solid 1px black;
+}
+
+ #contact p{
+	line-height: 2;
+}
+
+
+/* footer */
+
+footer{
+	margin: 5% 10% 8%;
+	display: flex;
+	justify-content: center;
+}
+
+/* SERVICES PAGE */
+
+.services-header-img{
+	width: 100%;
+	margin-top:10%;
+}
+
+.services{
+margin-top: 3%;
+padding-bottom: 3%;
+border-bottom: 1px solid black;
+}
+
+
+.services h2 {
+	font-size: 1.5rem;
+}
+
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 3% 0;
+}
+
+.item{
+	display: flex;
+	flex-wrap: wrap;
+	width: 40%;
+	margin: 2% 0;
+	background: #F7F6F6;
+	border: 1px solid black;
+	padding: 2%;
+}
+
+.item button{
+ margin-top: 10%;
+ margin-bottom: 5%;
+	border: black solid 1px;
+	background: white;
+	width: 35%;
+	height: 20%;
+	border-radius: 7px;
+}
+
+.item button:hover{
+	color: white;
+	background-color: black;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.bottomServices{
+	border-top: 2px solid black;
+	padding-top: 3%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.bottomServices ul{
+	padding: 3%;
+	list-style-type: square;
+
+}
+
+.bottomServices li{
+	padding: 1%;
+}
+
+.funFacts{
+	width: 50%;
+}
+
+/* About section */
+
+.about {
+	width: 100%;
+	display: flex;
+	padding-top: 15%;
+	padding-bottom: 5%;
+	justify-content: space-around;
+align-content: center;
+
+}
+
+.ideas-header-img{
+
+}
+
+.leftAbout{
+	width: 30%;
+}
+
+.about h1 {
+	font-size: 3rem;
+
+}
+
+.contribute{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 3%;
+	border-top: 2px solid black;
+}
+
+.contribute h2{
+	display: flex;
+ justify-content: center;
+  font-size: 3rem;
+}
+
+.contribute p{
+	display: flex;
+ justify-content: center;
+ padding-bottom: 3%;
+ font-size: 1rem;
+}
+
+.contribute button{
+	height: 10rem;
+	font-size: 4rem;
+	border-radius: 100px;
+
+}
+
+.contribute button:hover{
+  box-shadow: 5px 10px 8px 10px #888888;
+	background-color: #DE3030;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+
 
