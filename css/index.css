@@ -357,7 +357,6 @@ align-content: center;
     nav a{
     
         color: grey;
-    
         
     }
 
@@ -383,11 +382,82 @@ align-content: center;
         display: none;
     }
 
-    .header{
- top: 50%;
-       
-    }
+
+
+}
+
+@media (max-width: 500px){
+
+ 
+ 
+    
+    nav a{
+    display: flex;
+    padding: 5% 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+    justify-content: center;
+   
     }
 
+    nav a:hover{
+        border-bottom: 1px solid black;
+    }
+   
+
+    .links{
+       
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+     
+        .logo{
+            width: 100%;
+            margin-top: 5%;
+            border-bottom: 1px solid black;
+            justify-content: center;
+           
+        }
+
+        .logo img{
+            width: 35%;
+       
+        padding-bottom: 5%;
+
+        }
+
+    .header{
+    border-bottom: 2px solid black;
+        }
+
+        .leftHeader{
+            padding-bottom: 5%;
+           
+        }
+
+        #topSection{
+            flex-direction: column;
+        }
+
+        #topSection div{
+
+            padding-top: 3%;
+
+        }
+
+        #bottomSection{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottomSec{
+            width: 100%;
+            margin: 3%;
+        }
 
 }
